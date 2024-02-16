@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rifshaashraf/static/css/main.effe552c.css",
+    "main.css": "/rifshaashraf/static/css/main.e1ae5110.css",
     "main.js": "/rifshaashraf/static/js/main.9ad4d3c9.js",
     "static/js/592.a0aeb11c.chunk.js": "/rifshaashraf/static/js/592.a0aeb11c.chunk.js",
     "static/media/burger-template.PNG": "/rifshaashraf/static/media/burger-template.7b7f1a3a96e73fd1fa4a.PNG",
@@ -13,12 +13,12 @@
     "static/media/london-appliance-solutions-template.PNG": "/rifshaashraf/static/media/london-appliance-solutions-template.5f887e2d42035e127ec3.PNG",
     "static/media/cheerio.png": "/rifshaashraf/static/media/cheerio.04f86ae6f60712eab9ce.png",
     "index.html": "/rifshaashraf/index.html",
-    "main.effe552c.css.map": "/rifshaashraf/static/css/main.effe552c.css.map",
+    "main.e1ae5110.css.map": "/rifshaashraf/static/css/main.e1ae5110.css.map",
     "main.9ad4d3c9.js.map": "/rifshaashraf/static/js/main.9ad4d3c9.js.map",
     "592.a0aeb11c.chunk.js.map": "/rifshaashraf/static/js/592.a0aeb11c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.effe552c.css",
+    "static/css/main.e1ae5110.css",
     "static/js/main.9ad4d3c9.js"
   ]
 }
