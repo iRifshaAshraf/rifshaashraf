@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rifshaashraf/static/css/main.e5238b35.css",
-    "main.js": "/rifshaashraf/static/js/main.2394db52.js",
+    "main.js": "/rifshaashraf/static/js/main.108804d6.js",
     "static/js/592.a0aeb11c.chunk.js": "/rifshaashraf/static/js/592.a0aeb11c.chunk.js",
     "static/media/burger-template.PNG": "/rifshaashraf/static/media/burger-template.7b7f1a3a96e73fd1fa4a.PNG",
     "static/media/flynance-template.PNG": "/rifshaashraf/static/media/flynance-template.80d4368d032935ca90e0.PNG",
@@ -17,11 +17,11 @@
     "static/media/textUtils.PNG": "/rifshaashraf/static/media/textUtils.0d1ee2e22bca4fda41d7.PNG",
     "index.html": "/rifshaashraf/index.html",
     "main.e5238b35.css.map": "/rifshaashraf/static/css/main.e5238b35.css.map",
-    "main.2394db52.js.map": "/rifshaashraf/static/js/main.2394db52.js.map",
+    "main.108804d6.js.map": "/rifshaashraf/static/js/main.108804d6.js.map",
     "592.a0aeb11c.chunk.js.map": "/rifshaashraf/static/js/592.a0aeb11c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5238b35.css",
-    "static/js/main.2394db52.js"
+    "static/js/main.108804d6.js"
   ]
 }
