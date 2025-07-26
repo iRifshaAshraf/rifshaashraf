@@ -1,0 +1,55 @@
+.my-portfolio{
+    margin-top: 5rem;
+    margin-right: 5rem;
+    padding: 0 1rem;
+    
+}
+  
+  .template-1 {
+    margin-right: 25px;
+    margin-left: 20px;
+  }
+  
+  .templates .card{
+    background-color: #212b34;
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .templates h5{
+    font-size: 18px;
+    color: #27AE60;
+    font-weight: 700;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .templates p{
+    font-size: 14px;
+    color: #ffff !important;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .my-portfolio{
+      margin-top: 3rem;
+      margin-right: 4rem;
+      font-size: 12px;
+  }
+    
+    .template-1 {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .templates h5{
+      font-size: 16px;
+    }
+    .templates p{
+      font-size: 12px;
+    }
+  }

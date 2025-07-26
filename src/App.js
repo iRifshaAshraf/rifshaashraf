@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+// import react,{ useState } from 'react';
+import React from 'react'
+import NavBar from './components/NavBar.js'
+import Header from './components/Header.js'
+import AboutMe from './components/AboutMe.js'
+import Portfolio from './components/Portfolio.js'
+import ContactMe from './components/ContactMe.js'
+import Footer from './components/Footer.js'
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>    
+      <NavBar />
+      <Header />
+      <AboutMe />
+      <Portfolio />
+      <ContactMe />
+      <Footer />
+    </BrowserRouter>
   );
 }
 
 export default App;
+
