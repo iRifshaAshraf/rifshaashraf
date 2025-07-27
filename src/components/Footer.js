@@ -1,11 +1,13 @@
-import React from 'react';
-import './Footer.css'; // Assuming you have a separate CSS file for styling
+import React from "react";
+import "./Footer.css"; // Assuming you have a separate CSS file for styling
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-text">
-        Copyright &copy; 2024<span className="color-scheme"> Rifsha Ashraf,</span> All Rights Reserved
+        Copyright &copy; 2025
+        <span className="color-scheme"> Rifsha Ashraf,</span> All Rights
+        Reserved
       </div>
     </footer>
   );
