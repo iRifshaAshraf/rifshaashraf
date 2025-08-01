@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rifshaashraf/static/css/main.8e52c745.css",
-    "main.js": "/rifshaashraf/static/js/main.583e2117.js",
+    "main.css": "/rifshaashraf/static/css/main.b081c090.css",
+    "main.js": "/rifshaashraf/static/js/main.dfabcffd.js",
     "static/js/453.07cb9913.chunk.js": "/rifshaashraf/static/js/453.07cb9913.chunk.js",
     "static/media/burger-template.PNG": "/rifshaashraf/static/media/burger-template.7b7f1a3a96e73fd1fa4a.PNG",
     "static/media/flynance-template.PNG": "/rifshaashraf/static/media/flynance-template.80d4368d032935ca90e0.PNG",
@@ -16,12 +16,12 @@
     "static/media/cheerio.png": "/rifshaashraf/static/media/cheerio.04f86ae6f60712eab9ce.png",
     "static/media/textUtils.PNG": "/rifshaashraf/static/media/textUtils.0d1ee2e22bca4fda41d7.PNG",
     "index.html": "/rifshaashraf/index.html",
-    "main.8e52c745.css.map": "/rifshaashraf/static/css/main.8e52c745.css.map",
-    "main.583e2117.js.map": "/rifshaashraf/static/js/main.583e2117.js.map",
+    "main.b081c090.css.map": "/rifshaashraf/static/css/main.b081c090.css.map",
+    "main.dfabcffd.js.map": "/rifshaashraf/static/js/main.dfabcffd.js.map",
     "453.07cb9913.chunk.js.map": "/rifshaashraf/static/js/453.07cb9913.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e52c745.css",
-    "static/js/main.583e2117.js"
+    "static/css/main.b081c090.css",
+    "static/js/main.dfabcffd.js"
   ]
 }
