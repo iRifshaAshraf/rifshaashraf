@@ -1,0 +1,122 @@
+/* ABOUT ME - start  */
+.about {
+  margin-top: 4rem;
+  margin-right: 5rem;
+  /* min-height: 100vh; */
+  color: #FFFFFF;
+  overflow: hidden;
+  padding: 0 !important;
+  font-family: inherit;
+  /* font-size: 15px; */
+  /* box-shadow: var(--box-shadow-1); */
+}
+/* .about-text-content, */
+.about-text-content h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.about-text-content {
+  justify-content: center;
+  text-align: center;
+}
+h3{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.education{
+  text-align: center;
+}
+
+.card{
+  border-radius: 15px;
+  background-color: #212b34;
+  /* text-align: justify; */
+  text-align: left;
+  /* border: 1px solid #27AE60; */
+}
+.card .card-header{
+  padding: 15px 0;
+  border-bottom: 2px solid #27AE60;
+  text-align: center;
+}
+.card h5, .card h6{
+  font-weight: 600;
+}
+.education .card{
+  width: 26rem;
+  height: 10rem;
+}
+.education .card-body{
+  padding: 20px;
+}
+/* .experience .card{
+  width: 31rem;
+  height: 19rem;
+} */
+.experience .card li{
+  font-size: 14px !important;
+}
+
+
+
+
+/* ABOUT ME - end  */
+@media screen and (max-width: 768px){}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin-top: 3rem;
+    margin-right: 4rem;
+    /* margin-bottom: 0; */
+  }
+  .about-text-content{
+    padding-right: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  h3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  h3 .line{
+    margin-top: 4px;
+    width: 3rem;
+    border-bottom: 2px solid #27AE60;
+  }
+  .education{
+    text-align: center;
+    /* border: 1px solid; */
+  }
+  
+  .card h5{
+    font-size: 14px;
+  }
+  .card h6{
+    font-size: 12px;
+    font-weight: 0;
+  }
+  .card .card-text h6{
+    font-size: 12px;
+    /* margin-top: 0; */
+  }
+  .card .card-header{
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .education .card{
+    width: auto;
+    height: auto;
+  }
+  .education .card-body{
+    padding: 20px;
+  }
+  .experience .card{
+    width: auto;
+    height: auto;
+  }
+  .experience .card li{
+    font-size: 12px !important;
+  }
+}
