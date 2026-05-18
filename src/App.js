@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio.js'
 import ContactMe from './components/ContactMe.js'
 import Footer from './components/Footer.js'
 import { BrowserRouter } from 'react-router-dom';
+import Projects from './components/Projects.js';
 
 
 function App() {  
@@ -15,7 +16,8 @@ function App() {
     <BrowserRouter>    
       <NavBar />
       <Header />
-      <AboutMe />
+      <AboutMe />   
+      <Projects />
       <Portfolio />
       <ContactMe />
       <Footer />
