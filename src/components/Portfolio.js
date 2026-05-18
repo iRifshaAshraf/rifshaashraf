@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./Portfolio.css";
+import "./Title.css";
 
 // Images
 import TextUtilsImg from "./img/textUtils.PNG";
@@ -13,77 +14,77 @@ import adrianaTemplate from "./img/adriana-gravino-template.PNG";
 import nunoTemplate from "./img/nuno-template.PNG";
 import burgerResTemplate from "./img/burger-template.PNG";
 
-// Portfolio Data
 const projects = [
   {
     title: "Text Utils",
     image: TextUtilsImg,
     link: "https://irifshaashraf.github.io/TextUtils-template/",
-    tech: "HTML, CSS, Bootstrap and React.js",
-    note: "This is the custom site.",
+    tech: ["React.js", "Bootstrap", "HTML", "CSS"],
+    note: "Text manipulation utility app",
   },
   {
     title: "Bakery",
     image: bakeryImg,
     link: "https://bakery-rifsha.web.app/",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom site.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Custom bakery website template",
   },
   {
-    title: "UI Template",
+    title: "Flynance UI Template",
     image: FlynanceTemplate,
     link: "https://flynance-rifsha.web.app/",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom site.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Finance UI template",
   },
   {
     title: "Adriana Gravino Template",
     image: adrianaTemplate,
     link: "https://adriana-gravino-rifsha.web.app/index.html",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom site.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Personal/portfolio template",
   },
   {
-    title: "Burger Template",
+    title: "Burger Restaurant",
     image: burgerResTemplate,
     link: "https://burger-restaurant-r.web.app/",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom site.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Restaurant landing page",
   },
   {
     title: "News Vista",
     image: NewsVistaImg,
     link: "https://irifshaashraf.github.io/general",
-    tech: "HTML, CSS, Bootstrap, and React.js",
-    note: "External API Integrated",
+    tech: ["React.js", "Bootstrap", "REST API"],
+    note: "Live news app with external API",
+    isApi: true,
   },
   {
     title: "UI Template",
     image: uiTemplate,
     link: "https://ui-template-rifsha.web.app/",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom site.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Modern UI landing template",
   },
   {
-    title: "Portfolio",
+    title: "Old Portfolio",
     image: OldPortfolioImg,
     link: "https://irifshaashraf.github.io/Rifsha-Ashraf/",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom Portfolio.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Previous personal portfolio",
   },
   {
     title: "Nuno Template",
     image: nunoTemplate,
     link: "https://nuno-rifsha.web.app/",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom site.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Minimal portfolio template",
   },
   {
-    title: "London Appliance Template",
+    title: "London Appliance Solutions",
     image: LondonAppTemplate,
     link: "https://londonappliancesolutionsrifsha.web.app/",
-    tech: "HTML, CSS, Bootstrap and JavaScript",
-    note: "This is the custom site.",
+    tech: ["JavaScript", "Bootstrap", "HTML", "CSS"],
+    note: "Business website template",
   },
 ];
 
@@ -91,8 +92,9 @@ const MyPortfolio = () => {
   const portfolioRef = useRef(null);
 
   return (
-    <section className="my-portfolio" id="my-portfolio" ref={portfolioRef}>
+    <section className="my-portfolio mt-4 me-lg-5" id="my-portfolio" ref={portfolioRef}>
       <div className="container">
+
         <div className="section-title">
           <h2 className="title-heading hola">
             <span>My</span> Portfolio
@@ -101,53 +103,43 @@ const MyPortfolio = () => {
           </h2>
         </div>
 
-        <p className="text-center">
-          Within this portfolio, a selection of work is showcased, encompassing
-          development projects, design samples, and writing examples. The focus
-          lies in creating solutions that are not only functional but also
-          visually appealing and user-friendly. For those interested in
-          collaboration or with inquiries, please feel free to reach out without
-          hesitation.
+        <p className="portfolio-intro">
+          A selection of development projects, design templates, and 
+          custom websites built with a focus on responsive design, 
+          clean code, and great user experience.
         </p>
 
-        <div className="site-template mt-5">
-          <div className="templates">
-            <div className="row">
-              {[0, 1].map((col) => (
-                <div className="col-md-6" key={col}>
-                  {projects
-                    .filter((_, index) => index % 2 === col)
-                    .map(({ title, image, link, tech, note }, idx) => (
-                      <div className="template-1" key={idx}>
-                        <div className="card mb-3">
-                          <div className="row g-0">
-                            <div className="col-md-4">
-                              <img
-                                src={image}
-                                className="img-fluid card-img-top"
-                                alt={title}
-                              />
-                            </div>
-                            <div className="col-md-8">
-                              <div className="card-body">
-                                <a href={link} target="_blank" rel="noreferrer">
-                                  <h5 className="card-title">{title}</h5>
-                                </a>
-                                <p className="card-text">
-                                  {note} <br />
-                                  <b>Technology Used:</b> {tech}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+        <div className="portfolio-grid mt-4">
+          {projects.map(({ title, image, link, tech, note, isApi }, idx) => (
+            <div className="portfolio-card" key={idx}>
+              <div className="portfolio-img-wrap">
+                <img src={image} alt={title} className="portfolio-img" />
+                <div className="portfolio-img-overlay">
+                  <a href={link} target="_blank" rel="noreferrer" className="visit-btn">
+                    Visit Site <i className="ti ti-external-link" aria-hidden="true"></i>
+                  </a>
                 </div>
-              ))}
+              </div>
+              <div className="portfolio-card-body">
+                <div className="portfolio-card-top">
+                  <div>
+                    <p className="portfolio-note">{note}</p>
+                    <a href={link} target="_blank" rel="noreferrer" className="portfolio-title">
+                      {title}
+                    </a>
+                  </div>
+                  {isApi && <span className="api-badge">API</span>}
+                </div>
+                <div className="portfolio-tags">
+                  {tech.map((t, i) => (
+                    <span className="p-tag" key={i}>{t}</span>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
+
       </div>
     </section>
   );

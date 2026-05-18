@@ -1,122 +1,289 @@
-/* ABOUT ME - start  */
+/* === ABOUT ME — start ==== */
+
 .about {
   margin-top: 4rem;
   margin-right: 5rem;
-  /* min-height: 100vh; */
-  color: #FFFFFF;
+  color: #ffffff;
   overflow: hidden;
   padding: 0 !important;
   font-family: inherit;
-  /* font-size: 15px; */
-  /* box-shadow: var(--box-shadow-1); */
 }
-/* .about-text-content, */
-.about-text-content h6 {
-  font-size: 18px;
-  font-weight: 400;
-}
-.about-text-content {
-  justify-content: center;
-  text-align: center;
-}
-h3{
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-.education{
+
+/* ── Intro card ── */
+.about-intro-card {
+  background-color: #212b34;
+  border-radius: 15px;
+  padding: 2rem 2.25rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
-.card{
-  border-radius: 15px;
-  background-color: #212b34;
-  /* text-align: justify; */
-  text-align: left;
-  /* border: 1px solid #27AE60; */
+.about-paragraph {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.75rem;
 }
-.card .card-header{
-  padding: 15px 0;
-  border-bottom: 2px solid #27AE60;
-  text-align: center;
-}
-.card h5, .card h6{
+
+.green-highlight {
+  color: #27ae60;
   font-weight: 600;
 }
-.education .card{
+
+/* Stats row */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+
+.stat-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #27ae60;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(39, 174, 96, 0.25);
+}
+
+/* ── Sub-headings ── */
+.sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 2.5rem 0 1.25rem;
+  position: relative;
+}
+
+.sub-heading .line {
+  margin-top: 6px;
+  width: 3rem;
+  border-bottom: 2px solid #27ae60;
+}
+
+/* ── Shared card ── */
+.info-card {
+  background-color: #212b34;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* ── Card icon ── */
+.card-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(39, 174, 96, 0.12);
+  border: 1px solid rgba(39, 174, 96, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #27ae60;
+}
+
+/* ── Card text ── */
+.card-duration {
+  font-size: 12px;
+  color: #27ae60;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.card-title-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 2px;
+}
+
+.card-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/* ── Education grid ── */
+.edu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.edu-card {
   width: 26rem;
-  height: 10rem;
-}
-.education .card-body{
-  padding: 20px;
-}
-/* .experience .card{
-  width: 31rem;
-  height: 19rem;
-} */
-.experience .card li{
-  font-size: 14px !important;
 }
 
+.edu-card .card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 2px solid #27ae60;
+}
 
+/* ── Experience grid ── */
+.exp-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
 
+.exp-card {
+  width: calc(50% - 0.625rem);
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
 
-/* ABOUT ME - end  */
-@media screen and (max-width: 768px){}
+.info-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 2px solid #27ae60;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.current-badge {
+  font-size: 11px;
+  background: rgba(39, 174, 96, 0.15);
+  color: #27ae60;
+  padding: 3px 10px;
+  border-radius: 99px;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.info-card-body {
+  padding: 1rem 1.5rem 1.25rem;
+  flex: 1;
+}
+
+.resp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resp-list li {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.resp-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #27ae60;
+  flex-shrink: 0;
+}
+
+/* === ABOUT ME — end === */
+
+/* ── Responsive ── */
+@media screen and (max-width: 992px) {
+  .exp-card {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .about {
     margin-top: 3rem;
-    margin-right: 4rem;
-    /* margin-bottom: 0; */
+    margin-right: 1rem;
   }
-  .about-text-content{
-    padding-right: 0;
-    text-align: center;
-    font-size: 12px;
+
+  .about-intro-card {
+    padding: 1.5rem 1.25rem;
   }
-  h3{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  h3 .line{
-    margin-top: 4px;
-    width: 3rem;
-    border-bottom: 2px solid #27AE60;
-  }
-  .education{
-    text-align: center;
-    /* border: 1px solid; */
-  }
-  
-  .card h5{
+
+  .about-paragraph {
     font-size: 14px;
   }
-  .card h6{
+
+  .stat-item {
+    padding: 0 1.25rem;
+  }
+
+  .stat-num {
+    font-size: 1.5rem;
+  }
+
+  .edu-card {
+    width: 100%;
+  }
+
+  .exp-card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .sub-heading {
+    font-size: 16px;
+  }
+
+  .card-title-text {
+    font-size: 14px;
+  }
+
+  .card-duration {
+    font-size: 11px;
+  }
+
+  .resp-list li {
     font-size: 12px;
-    font-weight: 0;
   }
-  .card .card-text h6{
-    font-size: 12px;
-    /* margin-top: 0; */
-  }
-  .card .card-header{
-    padding: 10px 0;
-    font-size: 12px;
-  }
-  .education .card{
-    width: auto;
-    height: auto;
-  }
-  .education .card-body{
-    padding: 20px;
-  }
-  .experience .card{
-    width: auto;
-    height: auto;
-  }
-  .experience .card li{
-    font-size: 12px !important;
+
+  .info-card-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
