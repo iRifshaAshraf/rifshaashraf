@@ -1,0 +1,214 @@
+/* PROJECTS - start */
+
+.projects-section {
+  margin-top: 4rem;
+  color: #ffffff;
+  padding: 0 !important;
+  font-family: inherit;
+  overflow: hidden;
+}
+
+.projects-section .section-title{
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+}
+
+/* .projects-section .section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+} */
+
+/* matches About Me heading style */
+/* .projects-section .section-title .line {
+  display: block;
+  margin: 6px auto 0;
+  width: 3rem;
+  border-bottom: 2px solid #27ae60;
+} */
+
+/* .projects-section .bg-text {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+} */
+
+/* Sub-section headings: Freelance Work / Personal Projects */
+/* .projects-section .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 2.5rem 0 1.25rem;
+  position: relative;
+}
+
+.projects-section .sub-heading .line {
+  display: block;
+  margin: 4px auto 0;
+  width: 2.5rem;
+  border-bottom: 2px solid #27ae60;
+} */
+
+/* Grid */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Card — matches .card from AboutMe */
+.project-card {
+  background-color: #212b34;
+  border-radius: 15px;
+  color: #ffffff;
+  width: 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-align: left;
+}
+
+/* Card header — matches .card-header from AboutMe */
+.project-card .card-header {
+  padding: 14px 20px;
+  border-bottom: 2px solid #27ae60;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  background: transparent;
+  border-radius: 15px 15px 0 0;
+}
+
+.project-card .card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.project-card .card-type {
+  font-size: 12px;
+  color: #27ae60;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.project-card .card-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Links area (top-right of header) */
+.project-card .card-links {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-end;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.project-card .live-badge {
+  font-size: 11px;
+  background: rgba(39, 174, 96, 0.15);
+  color: #27ae60;
+  padding: 3px 8px;
+  border-radius: 99px;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.project-card .card-link {
+  font-size: 12px;
+  color: #27ae60;
+  text-decoration: none;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+  padding: 3px 10px;
+  border-radius: 99px;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.project-card .card-link:hover {
+  background: rgba(39, 174, 96, 0.12);
+}
+
+/* Card body */
+.project-card .card-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.project-card .card-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Tags */
+.project-card .card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.project-card .tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(39, 174, 96, 0.07);
+}
+
+/* PROJECTS - end */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .projects-section {
+    margin-top: 3rem;
+  }
+
+  .project-card {
+    width: auto;
+  }
+
+  .project-card .card-name {
+    font-size: 14px;
+  }
+
+  .project-card .card-desc {
+    font-size: 12px;
+  }
+
+  .project-card .card-header {
+    padding: 10px 16px;
+  }
+
+  .project-card .card-body {
+    padding: 14px 16px;
+  }
+
+  .projects-section .section-title {
+    font-size: 1.5rem;
+  }
+}
