@@ -13,10 +13,23 @@ const educationData = [
 
 const experienceData = [
   {
-    duration: "Feb 2026 - Present",
+    duration: "Oct 2021 - Present",
+    title: "Frontend Developer",
+    company: "Freelance",
+    current: true,
+    icon: "ti-device-laptop",
+    responsibilities: [
+      "Developed e-commerce and corporate websites using React JS, Next JS, PHP/Laravel, WordPress, and Shopify",
+      "Converted PSD/Figma designs into pixel-perfect, cross-browser-compatible, responsive HTML/CSS",
+      "Collaborated with clients to gather requirements and deliver customized, scalable UI solutions",
+      "Maintained clean, reusable code standards ensuring consistent UX across all devices",
+    ],
+  },
+  {
+    duration: "Feb 2026 - May 2026",
     title: "Full Stack Developer",
     company: "JZ Tech",
-    current: true,
+    current: false,
     icon: "ti-code",
     responsibilities: [
       "Developing and maintaining front-end and back-end web applications",
@@ -40,19 +53,6 @@ const experienceData = [
     ],
   },
   {
-    duration: "Oct 2021 - Present",
-    title: "Frontend Developer",
-    company: "Freelance",
-    current: false,
-    icon: "ti-device-laptop",
-    responsibilities: [
-      "Developed e-commerce and corporate websites using React JS, Next JS, PHP/Laravel, WordPress, and Shopify",
-      "Converted PSD/Figma designs into pixel-perfect, cross-browser-compatible, responsive HTML/CSS",
-      "Collaborated with clients to gather requirements and deliver customized, scalable UI solutions",
-      "Maintained clean, reusable code standards ensuring consistent UX across all devices",
-    ],
-  },
-  {
     duration: "July 2022 - Feb 2024",
     title: "Security Content Creator",
     company: "ioSENTRIX",
@@ -73,7 +73,6 @@ const AboutMe = () => {
   return (
     <section className="about mt-4 me-lg-5" id="about" ref={aboutRef}>
       <div className="container">
-
         {/* Section heading */}
         <div className="section-title">
           <h2 className="title-heading hola">
@@ -86,12 +85,17 @@ const AboutMe = () => {
         {/* Intro paragraph + stats */}
         <div className="about-intro-card">
           <p className="about-paragraph">
-            I'm a <span className="green-highlight">Frontend Developer</span> with{" "}
-            <span className="green-highlight">2+ years of professional experience</span> building
-            scalable, responsive web applications. I specialize in{" "}
-            <span className="green-highlight">React.js, Next.js, and WordPress</span>, from
-            FinTech dashboards to client websites, with a strong focus on clean code,
-            performance, and pixel-perfect UI.
+            I'm a <span className="green-highlight">Frontend Developer</span>{" "}
+            with{" "}
+            <span className="green-highlight">
+              2+ years of professional experience
+            </span>{" "}
+            building scalable, responsive web applications. I specialize in{" "}
+            <span className="green-highlight">
+              React.js, Next.js, and WordPress
+            </span>
+            , from FinTech dashboards to client websites, with a strong focus on
+            clean code, performance, and pixel-perfect UI.
           </p>
           <div className="stats-row">
             <div className="stat-item">
@@ -166,7 +170,6 @@ const AboutMe = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
