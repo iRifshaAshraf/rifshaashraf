@@ -41,7 +41,7 @@ const experienceData = [
   },
   {
     duration: "May 2024 - Jan 2026",
-    title: "Junior Frontend Developer",
+    title: "Frontend Developer",
     company: "Finnovator IT Solutions",
     current: false,
     icon: "ti-layout-dashboard",
