@@ -1,3 +1,13 @@
+/* Sidebar spacing — global fix */
+.main-content {
+  /* margin-right: rem; */
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    margin-right: 3rem;
+  }
+}
 .App {
   text-align: center;
 }
