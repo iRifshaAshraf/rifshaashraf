@@ -11,6 +11,8 @@
   position: relative;
 }
 
+
+
 /* Green polygon — always visible, all screens */
 .contact .h-shape {
   width: 35%;
@@ -28,10 +30,6 @@
 .contact .container {
   position: relative;
   z-index: 1;
-}
-.contact .section-title,
-.contact .contact-wrapper{
-  margin-right: 5rem;
 }
 
 /* Two-column layout — equal height columns */
@@ -259,6 +257,10 @@
 
 /* Tablet */
 @media screen and (max-width: 992px) {
+  .contact .section-title,
+.contact .contact-wrapper{
+  margin-right: 4.5rem;
+}
   .contact-wrapper {
     grid-template-columns: 1fr;
     align-items: start;
@@ -275,6 +277,10 @@
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+  .contact .section-title,
+.contact .contact-wrapper{
+  margin-right: 1rem;
+}
   .contact {
     margin-top: 3rem;
   }
@@ -293,6 +299,6 @@
   }
   .contact .h-shape {
     width: 15%;
-    clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(80% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
