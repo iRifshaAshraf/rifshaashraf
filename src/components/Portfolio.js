@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Portfolio.css";
 import "./Title.css";
 
-// Images
 import TextUtilsImg from "./img/textUtils.PNG";
 import bakeryImg from "./img/bakery-template.PNG";
 import FlynanceTemplate from "./img/flynance-template.PNG";
@@ -88,13 +87,58 @@ const projects = [
   },
 ];
 
+const ProjectCard = ({ title, image, link, tech, note, isApi }) => (
+  <div className="portfolio-card">
+    <div className="portfolio-img-wrap">
+      <img src={image} alt={title} className="portfolio-img" />
+      <div className="portfolio-img-overlay">
+        <a href={link} target="_blank" rel="noreferrer" className="visit-btn">
+          Visit Site{" "}
+          <i className="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div className="portfolio-card-body">
+      <div className="portfolio-card-top">
+        <div>
+          <p className="portfolio-note">{note}</p>
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="portfolio-title"
+          >
+            {title}
+          </a>
+        </div>
+        {isApi && <span className="api-badge">API</span>}
+      </div>
+      <div className="portfolio-tags">
+        {tech.map((t, i) => (
+          <span className="p-tag" key={i}>
+            {t}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
 const MyPortfolio = () => {
   const portfolioRef = useRef(null);
+  const [current, setCurrent] = useState(0);
+  const total = projects.length;
+
+  const prev = () => setCurrent((c) => (c === 0 ? total - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === total - 1 ? 0 : c + 1));
 
   return (
-    <section className="my-portfolio mt-4 me-lg-5" id="my-portfolio" ref={portfolioRef}>
+    <section
+      className="my-portfolio mt-4 me-lg-5"
+      id="my-portfolio"
+      ref={portfolioRef}
+    >
       <div className="container">
-
         <div className="section-title">
           <h2 className="title-heading hola">
             <span>My</span> Portfolio
@@ -104,42 +148,59 @@ const MyPortfolio = () => {
         </div>
 
         <p className="portfolio-intro">
-          A selection of development projects, design templates, and 
-          custom websites built with a focus on responsive design, 
-          clean code, and great user experience.
+          A selection of development projects, design templates, and custom
+          websites built with a focus on responsive design, clean code, and
+          great user experience.
         </p>
 
+        {/* Desktop grid */}
         <div className="portfolio-grid mt-4">
-          {projects.map(({ title, image, link, tech, note, isApi }, idx) => (
-            <div className="portfolio-card" key={idx}>
-              <div className="portfolio-img-wrap">
-                <img src={image} alt={title} className="portfolio-img" />
-                <div className="portfolio-img-overlay">
-                  <a href={link} target="_blank" rel="noreferrer" className="visit-btn">
-                    Visit Site <i className="ti ti-external-link" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              <div className="portfolio-card-body">
-                <div className="portfolio-card-top">
-                  <div>
-                    <p className="portfolio-note">{note}</p>
-                    <a href={link} target="_blank" rel="noreferrer" className="portfolio-title">
-                      {title}
-                    </a>
-                  </div>
-                  {isApi && <span className="api-badge">API</span>}
-                </div>
-                <div className="portfolio-tags">
-                  {tech.map((t, i) => (
-                    <span className="p-tag" key={i}>{t}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
+          {projects.map((proj, idx) => (
+            <ProjectCard key={idx} {...proj} />
           ))}
         </div>
 
+        {/* Mobile carousel */}
+        <div className="portfolio-carousel mt-4">
+          <div
+            className="carousel-track"
+            style={{ transform: `translateX(-${current * 100}%)` }}
+          >
+            {projects.map((proj, idx) => (
+              <div className="carousel-slide" key={idx}>
+                <ProjectCard {...proj} />
+              </div>
+            ))}
+          </div>
+
+          {/* Controls */}
+          <div className="carousel-controls">
+            <button
+              className="carousel-btn"
+              onClick={prev}
+              aria-label="Previous"
+            >
+              <i className="fas fa-chevron-left"></i>
+            </button>
+            <div className="carousel-dots">
+              {projects.map((_, idx) => (
+                <button
+                  key={idx}
+                  className={`carousel-dot ${idx === current ? "active" : ""}`}
+                  onClick={() => setCurrent(idx)}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+            <button className="carousel-btn" onClick={next} aria-label="Next">
+              <i className="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <p className="carousel-counter">
+            {current + 1} / {total}
+          </p>
+        </div>
       </div>
     </section>
   );
