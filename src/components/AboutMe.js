@@ -120,6 +120,13 @@ const AboutMe = () => {
           Education
           <span className="line d-block mx-auto"></span>
         </h3>
+        {/* <div className="section-title">
+          <h2 className="title-heading hola">
+            Academic <span>Journey</span>
+            <span className="line"></span>
+            <h3 className="bg-text hola">Education</h3>
+          </h2>
+        </div> */}
         <div className="edu-grid">
           {educationData.map((edu, idx) => (
             <div className="info-card edu-card" key={idx}>
@@ -138,10 +145,17 @@ const AboutMe = () => {
         </div>
 
         {/* Work Experience */}
-        <h3 className="sub-heading">
+        {/* <h3 className="sub-heading">
           Work Experience
           <span className="line d-block mx-auto"></span>
-        </h3>
+        </h3> */}
+        <div className="section-title mt-5">
+          <h2 className="title-heading hola">
+            Work <span>Journey</span>
+            <span className="line"></span>
+            <h3 className="bg-text hola">Experience</h3>
+          </h2>
+        </div>
         <div className="exp-grid">
           {experienceData.map((exp, idx) => (
             <div className="info-card exp-card" key={idx}>

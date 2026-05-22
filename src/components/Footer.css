@@ -90,6 +90,9 @@
     align-items: center;
     text-align: center;
   }
+  .footer-bottom{
+    margin-right: 4rem;
+  }
   .footer-role{
     text-wrap: pretty;
   }

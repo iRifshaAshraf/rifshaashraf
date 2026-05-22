@@ -286,4 +286,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .stat-divider{
+    display: none;
+  }
 }
