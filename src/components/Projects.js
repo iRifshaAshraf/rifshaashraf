@@ -26,10 +26,18 @@ const Projects = () => {
   return (
     <section className="projects-section me-lg-5" id="projects">
       <div className="container">
-        <h2 className="text-center mb-5">
+        <div className="section-title">
+          <h2 className="title-heading hola">
+            {/* About <span>Me</span> */}
+            Featured <span>Work</span>
+            <span className="line"></span>
+            <h3 className="bg-text hola">Projects</h3>
+          </h2>
+        </div>
+        {/* <h2 className="text-center mb-5">
           Projects
           <span className="line d-block mx-auto"></span>
-        </h2>
+        </h2> */}
         <div className="projects-grid">
           {projects.map((proj, i) => (
             <div className="project-card" key={i}>
@@ -41,12 +49,22 @@ const Projects = () => {
                 <div className="card-links">
                   {proj.isLive && <span className="live-badge">● Live</span>}
                   {proj.live && (
-                    <a href={proj.live} target="_blank" rel="noreferrer" className="card-link">
+                    <a
+                      href={proj.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="card-link"
+                    >
                       Visit ↗
                     </a>
                   )}
                   {proj.github && (
-                    <a href={proj.github} target="_blank" rel="noreferrer" className="card-link">
+                    <a
+                      href={proj.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="card-link"
+                    >
                       GitHub ↗
                     </a>
                   )}
@@ -55,7 +73,9 @@ const Projects = () => {
               <p className="card-desc p-4">{proj.desc}</p>
               <div className="card-tags px-4 pb-4">
                 {proj.tags.map((tag, j) => (
-                  <span className="tag" key={j}>{tag}</span>
+                  <span className="tag" key={j}>
+                    {tag}
+                  </span>
                 ))}
               </div>
             </div>
