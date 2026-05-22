@@ -188,7 +188,7 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
-    margin-right: 4rem;
+    margin-right: 1rem;
   }
 
   .header-content .h-shape {
