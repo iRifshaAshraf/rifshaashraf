@@ -84,12 +84,14 @@
    ======================== */
 
 @media screen and (max-width: 768px) {
-  .footer-inner {
-    
-    margin-right: 1rem;
+  .footer-inner {    
+    margin-right: 4rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .footer-role{
+    text-wrap: pretty;
   }
 
   .footer-name {
