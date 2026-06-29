@@ -85,17 +85,18 @@ const AboutMe = () => {
         {/* Intro paragraph + stats */}
         <div className="about-intro-card">
           <p className="about-paragraph">
-            I'm a <span className="green-highlight">Frontend Developer</span>{" "}
+            I'm a <span className="green-highlight">Full Stack Developer</span>{" "}
             with{" "}
             <span className="green-highlight">
               2+ years of professional experience
             </span>{" "}
             building scalable, responsive web applications. I specialize in{" "}
             <span className="green-highlight">
-              React.js, Next.js, and WordPress
+              React.js, Next.js, Node.js, and the MERN stack
             </span>
-            , from FinTech dashboards to client websites, with a strong focus on
-            clean code, performance, and pixel-perfect UI.
+            , from FinTech dashboards to full stack apps with secure
+            authentication, with a strong focus on clean code, performance, and
+            pixel-perfect UI.
           </p>
           <div className="stats-row">
             <div className="stat-item">
