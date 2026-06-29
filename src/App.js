@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio.js";
 import ContactMe from "./components/ContactMe.js";
 import Footer from "./components/Footer.js";
 import { BrowserRouter } from "react-router-dom";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects.js";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div className="main-content">
         <Header />
         <AboutMe />
+        <Skills />
         <Projects />
         <Portfolio />
         <ContactMe />

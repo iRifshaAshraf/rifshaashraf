@@ -3,6 +3,15 @@ import "./Projects.css";
 
 const projects = [
   {
+    title: "Sprintly",
+    type: "Personal Project · Full Stack",
+    desc: "A full-stack task management app built with the MERN stack. Features JWT authentication, task CRUD with status tracking, and a responsive dashboard with dark/light mode.",
+    tags: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "JWT"],
+    live: "https://sprintly-silk.vercel.app",
+    github: "https://github.com/iRifshaAshraf/sprintly",
+    isLive: true,
+  },
+  {
     title: "Alkhidr Inc.",
     type: "Client Project · WordPress",
     desc: "Corporate website for a US-based international trade company. Built with WordPress & Elementor — covers services, products, consultancy and import/export.",
